@@ -1,0 +1,44 @@
+MODEL/DB FIELDS PLANNING
+***REMOVE THE FILE WHEN DONE***
+
+## LISTING
+id: INT (automatically generated)
+realtor: INT (ForeignKey [realtor])
+title: STR
+address: STR
+city: STR
+state: STR
+zipcode: STR
+description: TEXT
+price: INT
+bedrooms: INT
+bathrooms: INT
+garage: INT [default:0]
+sqft: INT
+lot_size: FLOAT
+is_published: BOOLEAN [default: True] 
+list_date: DATE 
+photo_main: STR
+photo 1 to 6: STR
+
+
+
+### REALTOR
+id: INT
+name: STR 
+photo: STR
+description: TEXT
+email: STR
+is_mvp: BOOLEAN [default:False]
+
+
+## CONTACT
+id: INT
+user_id: INT
+listing: INT
+listing_id: INT
+name: STR
+email: STR
+phone: STR
+message: TEXT
+contact_date: DATE
