@@ -24,10 +24,12 @@ class Listing(models.Model):
     photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_5 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_6 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
-    is_published = models.BooleanField(default=True, help_text='Is this listing to be published?', verbose_name='you gonna publish this?')
+    is_published = models.BooleanField(default=True,
+                                help_text='Is this listing to be published?',
+                                verbose_name='Is this listing published?')
     list_date = models.DateTimeField(default=datetime.now, blank=True)
 
-    
+
     def __str__(self):
         return self.title
 

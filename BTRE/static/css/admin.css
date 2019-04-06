@@ -1,0 +1,59 @@
+#header {
+  height: 50px;
+  background: #10284e;
+  color: white;
+}
+
+#branding h1{
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: #10284e;
+}
+
+div.breadcrumbs {
+  background: #10284e;
+  font-family: monospace;
+}
+
+div.breadcrumbs a {
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+div#user-tools {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.module h2, .module caption, .inline-group h2 {
+  background-color: #10284e;
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+th {
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  background-color: #10284e;
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+  font-family: monospace;
+}
