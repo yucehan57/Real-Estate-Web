@@ -67,7 +67,7 @@ WSGI_APPLICATION = 'BTRE.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
+        'NAME': 'btre_test',
         'USER': 'postgres',
         'PASSWORD': 'YUCEHAn1992@',
         'HOST': 'localhost',
@@ -117,5 +117,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'BTRE/static')
 ]
 
+# Media Folder Settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 ## pip install psycopg2 and -binary
