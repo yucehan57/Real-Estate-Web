@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Listing
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import get_object_or_404
+from realtors.models import Realtor
 
 def index(request):
     """Main index page for all listings that are published.
@@ -19,9 +21,9 @@ def index(request):
 
 def listing(request, listing_id):
     """Single Listing page"""
-    listings = Listing.objects.all()
+    listing = get_object_or_404(Listing, pk=listing_id)
     context = {
-        'listings': listings,
+        'listing': listing,
     }
     return render(request, 'listings/listing.html', context)
 
