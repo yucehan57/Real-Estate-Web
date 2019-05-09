@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-    {% block title %} 
-    {% endblock %}
+      BT Real Estate {% block title %}{% endblock %}
     </title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'css/all.css' %}">
@@ -18,18 +17,18 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 </head>
 
 <body>
     <!-- Top bar -->
     {% include 'partials/_topbar.html' %}
-    
+
     <!-- Navbar -->
     {% include 'partials/_navbar.html' %}
-    
 
-    {% block content %} 
+
+    {% block content %}
         <!-- MAIN CONTENT GOES HERE -->
     {% endblock %}
 
