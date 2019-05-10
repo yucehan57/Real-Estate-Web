@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'realtors',
     'django.contrib.humanize',
     'accounts',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -128,5 +129,12 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+# E-mail configuration
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ychnkckmtr@gmail.com'
+EMAIL_HOST_PASSWORD = 'yuceyuce1992'
+EMAIL_USE_TLS = True
 
 ## pip install psycopg2 and -binary
