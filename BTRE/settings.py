@@ -133,8 +133,15 @@ MESSAGE_TAGS = {
 # E-mail configuration
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ychnkckmtr@gmail.com'
-EMAIL_HOST_PASSWORD = 'yuceyuce1992'
+EMAIL_HOST_USER = 'test@test.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 ## pip install psycopg2 and -binary
+
+
+## Local settings security. Will only work in production server.
+try:
+    from .local_settings import *
+except ImportError:
+    pass
