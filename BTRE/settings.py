@@ -130,14 +130,9 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-# E-mail configuration
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'test@test.com'
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
 
-## pip install psycopg2 and -binary
+
+## pip install psycopg2 and psycopg2-binary. Required for PostgreSQL
 
 
 ## Local settings security. Will only work in production server.
