@@ -7,8 +7,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't^ku==w=#nng#au$f0pq87^$#j0*qe#aq_94%)3g@-l#hd&94q'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -66,16 +65,6 @@ WSGI_APPLICATION = 'BTRE.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btre_test',
-        'USER': 'postgres',
-        'PASSWORD': 'YUCEHAn1992@',
-        'HOST': 'localhost',
-    }
-}
 
 
 # Password validation
