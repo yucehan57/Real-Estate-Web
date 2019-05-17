@@ -19,7 +19,7 @@ Users are allowed to make an inquiry for a listing. If user inquired for a listi
 
 Clone the repo, create virtual environment:
 
-    $ git clone https://github.com/yucehan57/tradingblog.git
+    $ git clone https://github.com/yucehan57/Real-Estate-Web.git
     $ virtualenv env
     $ source /env/bin/activate
     
